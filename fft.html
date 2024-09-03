@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Classifier Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Food Classifier Web</h1>
+
+<img id="image-view" src="#" alt="Image will be displayed here">
+
+<div id="output-box">Prediction will appear here</div>
+
+<div id="ingredients-box">Ingredients will appear here</div>
+
+<div>
+  <button class="button" id="gallery-button">Select from Gallery</button>
+  <button class="button" id="camera-button">Capture Image</button>
+  <button class="button" id="predict-button">Predict</button>
+</div>
+
+<input type="file" id="file-input" accept="image/*" style="display: none;">
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
